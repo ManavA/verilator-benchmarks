@@ -1,0 +1,28 @@
+This example was used to generate
+
+http://www.veripool.com/verilog_sim_benchmarks.html
+
+The code herein was from http://www.opencores.org
+
+
+RUNNING BENCHMARKS
+
+cd sim
+make machine
+     # This will output information about the machine.
+     # If you submit results back, you need to include this output.
+make (simulator-name)
+
+It will automatically determine the base time for a 1 cycle simulation,
+then keep increasing the cycle count until a resonable estimate has been
+made.  The final output will look like this:
+
+****Final: Verilator VERSION    COMMAND   1438800 cycles/second
+
+
+SUBMITTING RESULTS
+
+If you submit results you must send in the complete output, including the
+output of "make machine".  If the "lshw" command fails, and you can't
+install it, please describe your system model and characteristics.
+
